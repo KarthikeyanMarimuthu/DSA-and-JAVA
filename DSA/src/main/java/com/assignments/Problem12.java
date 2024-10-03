@@ -47,35 +47,47 @@ For Input 2:
 All the subarrays of the array are returned. There are a total of 10 subarrays.*/
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Problem12 {
 
-    public int[][] solve(int[] A) {
+    public static int[][] solve(int[] A) {
         // 2D ArrayList to store all subarrays
-        List<List<Integer>> subarrays = new ArrayList<>();
+        List<List<Integer>>  subArray = new ArrayList<>();
 
         // Generate all subarrays
-        for (int i = 0; i < A.length; i++) {
-            for (int j = i; j < A.length; j++) {
-                List<Integer> arr = new ArrayList<>(); // Using List to build subarrays
-                for (int k = i; k <= j; k++) {
-                    arr.add(A[k]); // Add elements to the list
+        for(int i = 0; i< A.length; i++){
+
+            for(int j = i; j < A.length; j++){
+                List< Integer> lst = new ArrayList<>();
+                for(int k = i; k <=j; k++){
+                    lst.add(A[k]);
                 }
-                subarrays.add(arr); // Add the subarray list to the 2D ArrayList
+                subArray.add(lst);
             }
         }
+
+
 
         // Convert List<List<Integer>> to int[][]
-        int[][] res = new int[subarrays.size()][];
-        for (int i = 0; i < subarrays.size(); i++) {
-            List<Integer> list = subarrays.get(i);
-            res[i] = new int[list.size()]; // Create a new array of the correct size
-            for (int j = 0; j < list.size(); j++) {
-                res[i][j] = list.get(j); // Populate the array
-            }
-        }
+        int res[][] = new int[subArray.size()][];
 
-        return res;
+        for(int i = 0; i< subArray.size(); i++){
+            List<Integer> lst = subArray.get(i);
+            int arr[] = new int[lst.size()];
+            for(int j = 0; j< lst.size(); j++){
+
+                arr[j] = lst.get(j);
+            }
+            res[i] = arr;
+
+        }
+      return res;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(Arrays.deepToString(solve(new int[] {1,4,3,2,4,55,2,22,1})));
     }
 }

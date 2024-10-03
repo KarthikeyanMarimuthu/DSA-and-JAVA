@@ -65,6 +65,7 @@ public class Problem15 {
         int N = A.length;
 
         for (int i = 0; i < N; i++) {
+            // Contribution Technique
             long contribution = (long)(i + 1) * (N - i) * A[i];
             sum += contribution;
         }

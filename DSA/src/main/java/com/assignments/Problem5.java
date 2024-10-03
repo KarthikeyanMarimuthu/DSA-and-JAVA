@@ -57,7 +57,7 @@ public class Problem5 {
     Steps
 
     1. Update K by K % Arr.length
-    2. Check the corener case K==0 || Arr.length ==1
+    2. Check the corner case K==0 || Arr.length ==1
     3. Reverse entire array
     4. Reverse from 0 to K-1 index
     5. Reverse from K to Arr.length-1*/
