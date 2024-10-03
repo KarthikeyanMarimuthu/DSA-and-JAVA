@@ -64,6 +64,7 @@ public class Problem10 {
             }
         }
 
+        // if minimum length of subarray which contains min and max means, it should be in the corner.
         int min_ptr = -1;
         int max_ptr = -1;
         int size = Integer.MAX_VALUE;
@@ -82,7 +83,7 @@ public class Problem10 {
             if(min_ptr!=-1 && max_ptr!=-1){
                                                        //Adding 1 bcoz of Array range
                 size = Math.min(size,  Math.abs(min_ptr - max_ptr) +  1);
-
+                //  Math.abs is very important
             }
 
             if(size==2){
