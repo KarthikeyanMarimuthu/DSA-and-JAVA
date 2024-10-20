@@ -1,4 +1,4 @@
-package com.additionalProblems;
+package com.advanced.module1.additional;
 
 /*
 Q1. Add One To Number
@@ -54,7 +54,7 @@ The returned vector should be [1, 2, 4] as 123 + 1 = 124.*/
 
 import java.util.ArrayList;
 
-public class Problem26 {
+public class Problem1 {
 
     public int[] plusOne(int[] A) {
 

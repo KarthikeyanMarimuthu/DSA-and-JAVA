@@ -1,4 +1,4 @@
-package com.assignments;
+package com.advanced.module1.assignments;
 
 /*
 Q1. Max Sum Contiguous Subarray
@@ -56,7 +56,7 @@ The subarray [4,-1,2,1] has the maximum possible sum of 6.
 
 
 
-public class Problem34 {
+public class Problem1 {
 
     public int maxSubArray(final int[] A) {
 

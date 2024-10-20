@@ -1,4 +1,4 @@
-package com.assignments;
+package com.advanced.module1.assignments;
 
 
 /*
@@ -49,7 +49,7 @@ Third devotee donated 25 coins to beggars ranging from 2 to 5. Final amount in e
 */
 
 
-public class Problem35 {
+public class Problem2 {
 
     public int[] solve(int A, int[][] B) {
 

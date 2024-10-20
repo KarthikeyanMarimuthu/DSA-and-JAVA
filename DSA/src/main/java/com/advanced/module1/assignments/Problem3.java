@@ -1,4 +1,4 @@
-package com.assignments;
+package com.advanced.module1.assignments;
 
 
 /*
@@ -67,7 +67,7 @@ No water is trapped.
 */
 
 
-public class Problem36 {
+public class Problem3 {
 
 
     public int trap(final int[] A) {

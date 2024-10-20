@@ -1,4 +1,4 @@
-package com.additionalProblems;
+package com.advanced.module1.additional;
 
 
 /*Q2. Flip
@@ -50,7 +50,7 @@ Output 2:
         []*/
 
 
-public class Problem27 {
+public class Problem2 {
 
     public int[] flip(String A) {
 
