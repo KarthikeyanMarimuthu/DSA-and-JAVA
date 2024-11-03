@@ -35,7 +35,7 @@ public class Problem32 {
 
     public int majorityElement(final int[] A) {
 
-
+        // Moores's voting algorithm
         int majority_index = 0;
         int count = 1;
         for(int i = 1; i < A.length; i++){
