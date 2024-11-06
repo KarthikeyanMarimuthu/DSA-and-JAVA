@@ -4,14 +4,39 @@ package com.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println(Solution.maxSubarray(5,7,new int[]{3,8,8,9,7}));
+
+
+    }
+
+    static class Solution {
+        public static int maxSubarray(int A, int B, int[] C) {
+            // Brute force
+            if(A==1 ){
+                if(C[0]<=B)
+                    return C[0];
+                else
+                    return 0;
+            }
+            int max = 0;
+            for(int i = 0; i < A; i++){
+
+                for(int j = i; j < A; j++){
+                    int sum = 0;
+                    for(int k = i; k <=j; k++){
+                        sum = sum + C[k];
+                    }
+                    if(sum <= B ){
+                        max = Math.max(sum, max);
+                    }
+
+                }
+            }
+
+            return max;
+
         }
     }
+
 }
