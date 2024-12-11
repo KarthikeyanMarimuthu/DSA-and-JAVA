@@ -161,6 +161,5 @@ public class Problem8 {
         }
 
         return true;
-
     }
 }
