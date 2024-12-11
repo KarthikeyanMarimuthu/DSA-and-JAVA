@@ -139,7 +139,6 @@ public class Problem8 {
                 }
             }
         }
-
         return true; // All books can be distributed within the limit
     }
 

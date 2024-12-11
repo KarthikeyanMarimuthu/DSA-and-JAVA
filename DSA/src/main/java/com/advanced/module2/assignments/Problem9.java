@@ -136,7 +136,6 @@ public class Problem9 {
                 return true;
             }
         }
-
         return false;
 
     }

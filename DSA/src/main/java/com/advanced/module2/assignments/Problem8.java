@@ -159,7 +159,6 @@ public class Problem8 {
                 return false;
             }
         }
-
         return true;
     }
 }
